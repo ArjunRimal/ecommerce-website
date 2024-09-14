@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #add8e6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#para1 {
+    margin: 10px;
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    margin-top: 10px;
+}
+
+#logoSection {
+    flex: 2;
+}
+
+#navLinks {
+    flex: 3;
+}
+
+#logoSection a {
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+#logoSection a img {
+    width: 65px;
+    border-radius: 30%;
+}
+
+#navLinks a {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 200px;
+    display: inline-block;
+}
+
+#productDetail {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#productDetail img {
+    width: 400px;
+}
+
+#productDetail p {
+    margin: 10px 0;
+}
+
+#addToCart, #remove {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+span{
+    color: red;
+}
+@media only screen and (max-width: 768px) {
+    
+    #navBar {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #logoSection {
+        flex: 2;
+    }
+    
+    #navLinks {
+        flex: 3;
+    }
+    
+    #logoSection a {
+        text-decoration: none;
+        margin: 10px;
+        display: block;
+    }
+    
+    #logoSection a img {
+        width: 65px;
+        border-radius: 30%;
+    }
+    
+    #navLinks a {
+        text-decoration: none;
+        margin-top: 40px;
+        margin-right: 80px;
+        display: inline-block;
+    }
+    
+}
+@media only screen and (max-width: 376px){
+    *{
+        font-size: small;
+    }
+    #navBar {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #logoSection {
+        flex: 2;
+    }
+    
+    #navLinks {
+        flex: 6;
+        margin-left: 100px;
+    }
+    
+    #logoSection a {
+        text-decoration: none;
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    #logoSection a img {
+        width: 32.5px;
+        border-radius: 30%;
+    }
+    
+    #navLinks a {
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 32px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,151 @@
+/* Universal styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family */
+}
+
+/* Styles for element with ID "para1" */
+#para1 {
+    margin: 10px; /* Margin around the element */
+    text-align: center; /* Center-align text */
+    color: red; /* Red text color */
+}
+
+/* Styles for element with ID "navBar" */
+#navBar {
+    display: flex; /* Flexbox layout */
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Styles for element with ID "logoSection" */
+#logoSection {
+    flex: 2; /* 2/5 width */
+}
+
+/* Styles for element with ID "navLinks" */
+#navLinks {
+    flex: 3; /* 3/5 width */
+}
+
+/* Styles for anchor tags within "logoSection" */
+#logoSection a {
+    text-decoration: none; /* Remove underlines */
+    margin: 10px; /* Margin around the links */
+    display: block; /* Make links block-level elements */
+}
+
+/* Styles for images within anchor tags in "logoSection" */
+#logoSection a img {
+    width: 65px; /* Set image width */
+    border-radius: 30%; /* Rounded corners */
+}
+
+/* Styles for anchor tags within "navLinks" */
+#navLinks a {
+    text-decoration: none; /* Remove underlines */
+    margin-right: 200px; /* Margin at the right */
+    margin-top: 40px; /* Margin at the top */
+    display: inline-block; /* Display as inline-block */
+}
+
+/* Styles for headings within "main" element */
+main h2 {
+    text-align: center; /* Center-align text */
+    margin: 20px; /* Margin around the heading */
+}
+
+/* Styles for element with ID "formSection" */
+#formSection {
+    margin: auto; /* Center-align the form */
+    padding: 10px; /* Padding */
+    width: 19%; /* 19% width */
+    text-align: left; /* Left-align text */
+    border: 1px solid beige; /* Border */
+    background-color: rgb(3, 3, 27); /* Dark background color */
+}
+
+/* Styles for forms */
+form,#loginSection  {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center-align items */
+    justify-content: center; /* Center-align content */
+    background-color: rgb(3, 3, 27); /* Dark background color */
+}
+
+/* Styles for error messages */
+.error-message {
+    color: red; /* Red text color */
+}
+
+/* Styles for success messages */
+.success-message {
+    color: green; /* Green text color */
+}
+
+/* Media query for screens up to 768px (Ipad Mini) */
+@media only screen and (max-width: 768px) {
+    /* Styles for navigation elements */
+    #navLinks {
+        flex: 3; /* 3/5 width */
+    }
+
+    #navLinks a {
+        margin-right: 80px; /* Adjust right margin for smaller screens */
+    }
+
+    /* Styles for form section */
+    #formSection {
+        margin: auto; /* Center-align the form */
+        padding: 10px; /* Padding */
+        width: 30%; /* 30% width */
+        text-align: left; /* Left-align text */
+        border: 1px solid beige; /* Border */
+        background-color: rgb(3, 3, 27); /* Dark background color */
+    }
+}
+
+
+/* Media query for screens up to 376px (Iphone SE) */
+@media only screen and (max-width: 376px) {
+    /* Font size adjustments */
+    * {
+        font-size: small;
+    }
+
+    /* Adjustments for navigation */
+    #navLinks {
+        flex: 6;
+    }
+
+    /* Adjustments for elements within "logoSection" */
+    #logoSection a {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    #logoSection a img {
+        width: 32.5px;
+        border-radius: 30%;
+    }
+
+    /* Adjustments for elements within "navLinks" */
+    #navLinks a {
+        margin-top: 20px;
+        margin-right: 32px;
+        display: inline-block;
+    }
+
+    /* Adjustments for form section */
+    #formSection {
+        margin: auto;
+        padding: 10px;
+        width: 50%;
+        text-align: left;
+        border: 1px solid beige;
+        background-color: rgb(3, 3, 27);
+    }
+}

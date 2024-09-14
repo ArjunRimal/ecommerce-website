@@ -1,0 +1,140 @@
+/* Universal styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #add8e6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styles for element with ID "para1" */
+#para1 {
+    margin: 10px;
+    text-align: center;
+    color: red;
+}
+
+/* Styles for element with ID "navBar" */
+#navBar {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Styles for element with ID "logoSection" */
+#logoSection {
+    flex: 2;
+}
+
+/* Styles for element with ID "navLinks" */
+#navLinks {
+    flex: 3;
+}
+
+/* Styles for anchor tags within "logoSection" */
+#logoSection a {
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+/* Styles for images within anchor tags in "logoSection" */
+#logoSection a img {
+    width: 65px;
+    border-radius: 30%;
+}
+
+/* Styles for anchor tags within "navLinks" */
+#navLinks a {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 200px;
+    display: inline-block;
+}
+
+/* Styles for <h2> elements within <main> */
+main h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styles for element with ID "formSection" */
+#formSection {
+    margin: auto;
+    padding: 10px;
+    width: 30%;
+    text-align: left;
+    border: 1px solid beige;
+    background-color: rgb(3, 3, 27);
+}
+
+/* Styles for forms */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 3, 27);
+}
+
+/* Media query for screens up to 768px (Ipad Mini) */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for navigation */
+    #navLinks {
+        flex: 3;
+    }
+
+    #navLinks a {
+        margin-right: 80px;
+    }
+
+    /* Adjustments for form section */
+    #formSection {
+        margin: auto;
+        padding: 10px;
+        width: 30%;
+        text-align: left;
+        border: 1px solid beige;
+        background-color: rgb(3, 3, 27);
+    }
+}
+
+/* Media query for screens up to 376px (Iphone SE) */
+@media only screen and (max-width: 376px) {
+    /* Font size adjustments */
+    * {
+        font-size: small;
+    }
+
+    /* Adjustments for navigation */
+    #navLinks {
+        flex: 6;
+    }
+
+    /* Adjustments for elements within "logoSection" */
+    #logoSection a {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    #logoSection a img {
+        width: 32.5px;
+        border-radius: 30%;
+    }
+
+    /* Adjustments for elements within "navLinks" */
+    #navLinks a {
+        margin-top: 20px;
+        margin-right: 32px;
+        display: inline-block;
+    }
+
+    /* Adjustments for form section */
+    #formSection {
+        margin: auto;
+        padding: 10px;
+        width: 50%;
+        text-align: left;
+        border: 1px solid beige;
+        background-color: rgb(3, 3, 27);
+    }
+}

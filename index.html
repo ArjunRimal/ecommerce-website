@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for document information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Mjmart</title>
+    <!-- Link to jQuery UI stylesheet -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- Link to custom JavaScript file with defer attribute for deferred execution -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Navigation bar -->
+      <nav id="navBar">
+        <!-- Logo section with a link to the homepage -->
+        <div id="logoSection">
+          <a href="index.html"><img src="img/logo.jpeg" alt="websiteLogo" /></a>
+        </div>
+        <!-- Navigation links -->
+        <div id="navLinks">
+          <a href="html/register.html"> Products</a>
+          <a href="html/widgets.html"> Widgets</a>
+          <a href="html/plug-ins.html"> Plug-ins</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main content section -->
+    <main>
+      <!-- Main section containing left and right divisions -->
+      <div id="mainSection">
+        <!-- Left division containing textual content and a button -->
+        <div id="leftDivision">
+          <h1>Make your Interior Minimalistic!</h1>
+          <p>Welcome to MJ Mart!</p>
+          <p>
+            Experience personalized service, curated quality, and timeless
+            elegance as you explore our collection. From cozy apartments to
+            sprawling estates, we're here to help you find the perfect piece to
+            elevate your space.
+          </p>
+          <p>Discover the joy of furnishing your home with MJ Mart.</p>
+          <!-- Button to initiate shopping action -->
+          <button id="button" onclick="redirectToAnotherPage()">
+            Start Shopping
+          </button>
+        </div>
+        <!-- Right division containing an image -->
+        <div id="rightDivision">
+          <img src="img/sofaset.png" alt="sofa" />
+        </div>
+      </div>
+      <!-- Section for displaying a map -->
+      <div id="map">
+        <!-- Text indicating store location -->
+        <p style="text-align: center; margin-bottom: 20px">Store Location</p>
+        <!-- Embedded Google Maps iframe -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13740569.298415154!2d-109.85366049999999!3d32.7755197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862e66b98bd12647%3A0x3f56b5aa95e93326!2sMJ%20Mart!5e0!3m2!1sen!2sca!4v1711871079647!5m2!1sen!2sca"
+          width="100%"
+          height="100"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>

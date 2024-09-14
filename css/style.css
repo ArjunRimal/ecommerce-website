@@ -1,0 +1,156 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family */
+}
+
+/* Styles for element with ID "para1" */
+#para1 {
+    margin: 10px; /* Margin around the element */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for element with ID "navBar" */
+#navBar {
+    display: flex; /* Flexbox layout */
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Styles for element with ID "logoSection" */
+#logoSection {
+    flex: 2; /* 2/5 width */
+}
+
+/* Styles for element with ID "navLinks" */
+#navLinks {
+    flex: 3; /* 3/5 width */
+}
+
+/* Styles for anchor tags within "logoSection" */
+#logoSection a {
+    text-decoration: none; /* Remove underlines */
+    margin: 10px; /* Margin around the links */
+    display: block; /* Make links block-level elements */
+}
+
+/* Styles for images within anchor tags in "logoSection" */
+#logoSection a img {
+    width: 65px; /* Set image width */
+    border-radius: 30%; /* Rounded corners */
+}
+
+/* Styles for anchor tags within "navLinks" */
+#navLinks a {
+    text-decoration: none; /* Remove underlines */
+    margin-top: 40px; /* Margin at the top */
+    margin-right: 200px; /* Margin at the right */
+    display: inline-block; /* Display as inline-block */
+}
+
+/* Styles for element with ID "mainSection" */
+#mainSection {
+    display: flex; /* Flexbox layout */
+}
+
+/* Styles for left and right divisions */
+#leftDivision,
+#rightDivision {
+    flex: 1; /* Equal width */
+    margin: 40px; /* Margin around the divisions */
+}
+
+/* Styles for left division */
+#leftDivision {
+    padding: 50px; /* Padding */
+}
+
+/* Styles for paragraphs within left division */
+#leftDivision p {
+    margin-top: 20px; /* Margin at the top */
+    line-height: 30px; /* Line height */
+}
+
+/* Styles for button */
+#button {
+    margin-top: 20px; /* Margin at the top */
+    padding: 5px; /* Padding */
+    border-radius: 10%; /* Border radius */
+    background-color: rgb(3, 3, 27); /* Dark background color */
+    color: white; /* Text color */
+}
+
+/* Media query for screens between 376px and 768px (Ipad Mini) */
+@media only screen and (max-width: 768px) and (min-width: 376px) {
+    /* Styles for navigation elements */
+    #navLinks {
+        flex: 3; /* 3/5 width */
+    }
+
+    #navLinks a {
+        margin-right: 80px; /* Adjust right margin for smaller screens */
+    }
+
+    /* Styles for main section */
+    #mainSection {
+        display: block; /* Display as block */
+    }
+
+    /* Styles for left division */
+    #leftDivision {
+        padding: 50px; /* Padding */
+    }
+
+    /* Styles for paragraphs within left division */
+    #leftDivision p {
+        margin-top: 20px; /* Margin at the top */
+        line-height: 30px; /* Line height */
+    }
+
+    /* Styles for button */
+    #button {
+        margin-top: 20px; /* Margin at the top */
+        padding: 5px; /* Padding */
+        border-radius: 10%; /* Border radius */
+        background-color: rgb(3, 3, 27); /* Dark background color */
+        color: white; /* Text color */
+    }
+}
+
+/* Media query for screens up to 376px (Iphone SE) */
+@media only screen and (max-width: 376px) {
+    /* Reduce font size for smaller screens */
+    * {
+        font-size: small;
+    }
+
+    /* Styles for navigation elements */
+    #navLinks {
+        flex: 6; /* 6/8 width */
+    }
+
+    /* Styles for elements within "logoSection" */
+    #logoSection a {
+        margin: 10px; /* Margin */
+        display: inline-block; /* Display as inline-block */
+    }
+
+    #logoSection a img {
+        width: 32.5px; /* Set image width */
+        border-radius: 30%; /* Rounded corners */
+    }
+
+    /* Styles for elements within "navLinks" */
+    #navLinks a {
+        margin-top: 20px; /* Margin at the top */
+        margin-right: 32px; /* Margin at the right */
+        display: inline-block; /* Display as inline-block */
+    }
+
+    /* Hide right division */
+    #rightDivision {
+        display: none; /* Hide the right division */
+    }
+}

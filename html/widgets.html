@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mjmart</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/widgets.css"> <!-- Assuming this is a custom CSS file for widget styling -->
+    <!-- External JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/widgets.js" defer></script> <!-- Assuming this is a custom JavaScript file for widget functionality -->
+    <!-- Inline JavaScript -->
+    <script>
+        // Initialize dialog widget
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+        // Initialize accordion widget
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="navBar">
+            <!-- Logo -->
+            <div id="logoSection">
+                <a href="../index.html"><img src="../img/logo.jpeg" alt="websiteLogo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <div id="navLinks">
+                <a href="products.html"> Products</a>
+                <a href="widgets.html"> Widgets</a>
+                <a href="plug-ins.html"> Plug-ins</a>
+            </div>
+        </nav>
+        <!-- Dialog Widget -->
+        <div id="dialog" title="Basic dialog">
+            <p>This is one of the widgets. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+        </div>
+        <!-- Accordion Widget -->
+        <div id="accordion">
+            <h3>Sofa</h3>
+            <div>
+                <p>
+                    The "Sofa" heading introduces content related to sofas. The accompanying paragraph describes various aspects such as comfort, materials, and styles that sofas offer. It highlights the importance of sofas in providing seating comfort and enhancing the ambiance of a living space.
+                </p>
+            </div>
+
+            <h3>Bed</h3>
+            <div>
+                <p>
+                    Under the "Bed" heading, the paragraph discusses the significance of beds in the context of a bedroom. It outlines the purpose of beds in providing a comfortable place to rest and sleep. Additionally, it mentions different bed sizes and materials, emphasizing their role as essential furniture pieces in any bedroom setting.
+                </p>
+            </div>
+
+            <h3>Paintings</h3>
+            <div>
+                <p>
+                    The "Paintings" heading introduces content related to artwork and decorative paintings. The accompanying paragraph elaborates on the role of paintings in adding visual interest and personality to a room. It mentions various painting styles and encourages homeowners to express their taste and creativity through the selection and display of paintings.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+
+            <h3>Others</h3>
+            <div>
+                <p>
+                    Under the "Others" heading, the paragraph discusses miscellaneous topics related to furniture and home decor. It covers general aspects such as home decor ideas, design considerations, and the importance of creating a comfortable living environment. This section provides additional information and complements the preceding sections focused on specific furniture items.
+                </p>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

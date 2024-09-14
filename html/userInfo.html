@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mjmart</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/userInfo.css"> <!-- Assuming this is a custom CSS file for user information page styling -->
+    <!-- External JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/userInfo.js" defer></script> <!-- Assuming this is a custom JavaScript file for user information page functionality -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="navBar">
+            <!-- Logo -->
+            <div id="logoSection">
+                <a href="../index.html"><img src="../img/logo.jpeg" alt="websiteLogo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <div id="navLinks">
+                <a href="../html/products.html"> Products</a>
+                <a href="../html/userInfo.html"> User Info</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>     
+        <!-- Update Form -->
+        <h2>Update Form</h2>
+        <div id="formSection">
+            <form id="form" action="../php/userInfo.php" method="post"> 
+                <!-- Instructions for updating fields -->
+                <p>You can update these fields:</p>  
+                <br>           
+                <!-- Date of Birth Input -->
+                <label for="datepicker">Date of Birth:</label>
+                <input type="text" id="datepicker" placeholder="mm/dd/yyyy"  name="dob" pattern="^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$">
+                <!-- Occupation Input -->
+                <label for="occupation">Occupation: &nbsp;</label>
+                <input type="text" id="occupation" name="occupation">
+                <!-- Gender Selection -->
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <!-- Update Button -->
+                <button id="button1" type="submit">Update</button>
+            </form>            
+        </div>
+        <!-- Animated Section -->
+        <div id="animate">
+            <!-- Animated paragraph -->
+            <p id="animated-paragraph">45% off April sales is coming</p>
+        </div>
+        <!-- Functions Section -->
+        <div id="functions">
+            <!-- Customer Message Display -->
+            <p id="customerMessage"></p>
+            <!-- Real-time date and time display -->
+            <p id="datetime">Real-time date and time:</p>                 
+        </div>   
+        <!-- Tabs Section -->
+        <div id="tabs">
+            <!-- Tab Navigation -->
+            <ul>
+              <li><a href="#tabs-1">1. More About Us</a></li>
+              <li><a href="#tabs-2">2. Our Services &nbsp;</a></li>
+            </ul>
+            <!-- Tab Content -->
+            <div id="tabs-1">
+              <p>At MJ Mart, we pride ourselves on being your go-to destination for all your furniture needs. Established with a commitment to excellence, our About Us section reflects our dedication to providing exceptional service and high-quality products. From classic to contemporary styles, we curate a diverse range of furniture to cater to every taste and preference.</p>
+            </div>
+            <div id="tabs-2">
+              <p>In Our Services division, we prioritize customer satisfaction above all else. Our team of knowledgeable and friendly staff is here to assist you every step of the way, whether you're seeking advice on interior design or need help navigating our extensive inventory. We offer delivery and assembly services to ensure a seamless experience from purchase to setup.</p>
+            </div>
+          </div>  
+    </main>
+</body>
+</html>

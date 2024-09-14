@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #add8e6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#para1 {
+    margin: 10px;
+    text-align: center;
+}
+
+#navBar {
+    display: flex;
+    margin-top: 10px;
+}
+
+#logoSection {
+    flex: 2;
+}
+
+#navLinks {
+    flex: 3;
+}
+
+#logoSection a {
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+#logoSection a img {
+    width: 65px;
+    border-radius: 30%;
+}
+
+#navLinks a {
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 200px;
+    display: inline-block;
+}
+
+#category{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.paragraph{
+    background-color: rgb(3, 3, 27);
+    color: white;
+    text-align: center;
+    margin: 30px 20px;
+}
+.imageSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image{
+    width: 33%;
+}
+
+.image img{
+    width: 100%;
+    padding: 20%;
+
+    
+}
+.image p{
+    margin-left: 50px;
+}
+
+/* Styles for elements with IDs "learnMore" and "btn1" */
+.learnMore, #btn1 {
+    padding: 0px 20px; /* Padding */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styles for element with ID "searchInput" */
+#searchInput {
+    padding: 0px 20px; /* Padding */
+    background-color: #ddeadd; /* Light green background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+span{
+    background-color:  rgb(3, 3, 27);
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    #navBar {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #logoSection {
+        flex: 2;
+    }
+    
+    #navLinks {
+        flex: 3;
+    }
+    
+    #logoSection a {
+        text-decoration: none;
+        margin: 10px;
+        display: block;
+    }
+    
+    #logoSection a img {
+        width: 65px;
+        border-radius: 30%;
+    }
+    
+    #navLinks a {
+        text-decoration: none;
+        margin-top: 40px;
+        margin-right: 80px;
+        display: inline-block;
+    }
+    
+}
+@media only screen and (max-width: 376px){
+    *{
+        font-size: small;
+    }
+    #navBar {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    #logoSection {
+        flex: 2;
+    }
+    
+    #navLinks {
+        flex: 6;
+    }
+    
+    #logoSection a {
+        text-decoration: none;
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    #logoSection a img {
+        width: 32.5px;
+        border-radius: 30%;
+    }
+    
+    #navLinks a {
+        text-decoration: none;
+        margin-top: 20px;
+        margin-right: 32px;
+        display: inline-block;
+    }
+    #formSection{
+        margin: auto;
+        padding: 10px;
+        width: 50%;
+        text-align: left;
+        border: 1px solid beige;
+        background-color: rgb(3, 3, 27);
+    }
+    .learnMore {
+        margin-top: 10px;
+        padding: 0px 2px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: xx-small;
+    }
+}

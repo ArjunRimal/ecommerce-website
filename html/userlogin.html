@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mjmart</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/userlogin.css"> <!-- Assuming this is a custom CSS file for user login page styling -->
+    <!-- External JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/userlogin.js" defer></script> <!-- Assuming this is a custom JavaScript file for user login page functionality -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="navBar">
+            <!-- Logo -->
+            <div id="logoSection">
+                <a href="../index.html"><img src="../img/logo.jpeg" alt="websiteLogo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <div id="navLinks">
+                <a href="../html/register.html"> Products</a>
+                <a href="../html/widgets.html"> Widgets</a>
+                <a href="../html/plug-ins.html"> Plug-ins</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Log In Dashboard -->
+        <h2>Log In Dashboard</h2>
+        <div id="formSection">
+            <form id="form" action="../php/jQFormsLogin.php" method="post">
+                <!-- Username Input -->
+                <label for="userName">Username:</label>
+                <input type="text" id="userName" name="userName" required minlength="3">
+                <!-- User Email Input -->
+                <label for="email">User Email:</label>
+                <input type="text" id="email" name="email">
+                <!-- Password Input -->
+                <label for="password">Password:&nbsp;&nbsp;</label>
+                <input type="password" id="password" name="password" >
+                <br>
+                <!-- Log In Button -->
+                <button id="button1" type="submit">Log In</button>
+                <br>
+                <!-- Sign Up Button -->
+                <p>Doesn't have an Account?</p>
+                <button id="button2" onclick="redirectToAnotherPage()">Sign Up</button>
+            </form>        
+        </div>
+        <!-- Message Display -->
+        <div id="message"></div>
+    </main>
+</body>
+</html>

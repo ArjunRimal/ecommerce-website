@@ -1,0 +1,16 @@
+
+CREATE DATABASE furniture_db;
+
+USE furniture_db;
+
+CREATE TABLE users (
+  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  firstName VARCHAR(50) NOT NULL,
+  lastName VARCHAR(50) NOT NULL,
+  userName VARCHAR(30) NOT NULL UNIQUE,
+  email VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  dob VARCHAR(30) NOT NULL,  
+  occupation VARCHAR(30) NOT NULL,
+  gender VARCHAR(30) NOT NULL
+);

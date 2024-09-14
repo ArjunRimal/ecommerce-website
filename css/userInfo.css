@@ -1,0 +1,176 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family */
+}
+
+/* Styles for element with ID "para1" */
+#para1 {
+    margin: 10px; /* Margin around the element */
+    text-align: center; /* Center-align text */
+    color: red; /* Text color */
+}
+
+/* Styles for element with ID "navBar" */
+#navBar {
+    display: flex; /* Flexbox layout */
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Styles for element with ID "logoSection" */
+#logoSection {
+    flex: 2; /* 2/5 width */
+}
+
+/* Styles for element with ID "navLinks" */
+#navLinks {
+    flex: 3; /* 3/5 width */
+}
+
+/* Styles for anchor tags within "logoSection" */
+#logoSection a {
+    text-decoration: none; /* Remove underlines */
+    margin: 10px; /* Margin around the links */
+    display: block; /* Make links block-level elements */
+}
+
+/* Styles for images within anchor tags in "logoSection" */
+#logoSection a img {
+    width: 65px; /* Set image width */
+    border-radius: 30%; /* Rounded corners */
+}
+
+/* Styles for anchor tags within "navLinks" */
+#navLinks a {
+    text-decoration: none; /* Remove underlines */
+    margin-top: 40px; /* Margin at the top */
+    margin-right: 200px; /* Margin at the right */
+    display: inline-block; /* Display as inline-block */
+}
+
+/* Styles for <h2> elements within <main> */
+main h2 {
+    text-align: center; /* Center-align text */
+    margin: 20px; /* Margin */
+}
+
+/* Styles for element with ID "formSection" */
+#formSection {
+    margin-top: 600px; /* Margin from the top */
+    margin: auto; /* Center horizontally */
+    padding: 10px; /* Padding */
+    width: 30%; /* Width */
+    text-align: left; /* Left-align text */
+    border: 1px solid beige; /* Border */
+    background-color: rgb(3, 3, 27); /* Dark background color */
+}
+
+/* Styles for forms */
+form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items */
+    justify-content: center; /* Center content */
+    background-color: rgb(3, 3, 27); /* Dark background color */
+}
+
+/* Styles for element with ID "functions" */
+#functions p {
+    margin: 50px; /* Margin */
+    text-align: center; /* Center-align text */
+    color: rgb(215, 16, 16); /* Text color */
+}
+
+/* Styles for element with ID "animated-paragraph" */
+#animated-paragraph {
+    position: absolute; /* Absolute positioning */
+    top: 12%; /* Position from the top */
+    left: -200px; /* Start off-screen */
+    font-size: 20px; /* Font size */
+    color: #d7107d; /* Text color */
+}
+
+/* Styles for element with ID "tabs" */
+#tabs {
+    margin-top: 20px; /* Margin from the top */
+    display: flex; /* Flexbox layout */
+    background-color: greenyellow; /* Background color */
+}
+
+/* Media query for screens between 376px and 768px (Ipad Mini) */
+@media only screen and (max-width: 768px) and (min-width: 376px) {
+    /* Styles for navigation elements */
+    #navLinks {
+        flex: 3; /* 3/5 width */
+    }
+
+    #navLinks a {
+        margin-right: 80px; /* Adjust right margin for smaller screens */
+    }
+
+    /* Styles for main section */
+    #mainSection {
+        display: block; /* Display as block */
+    }
+
+    /* Styles for form section */
+    #formSection {
+        margin: auto; /* Center horizontally */
+        padding: 10px; /* Padding */
+        width: 30%; /* Width */
+        text-align: left; /* Left-align text */
+        border: 1px solid beige; /* Border */
+        background-color: rgb(3, 3, 27); /* Dark background color */
+    }
+}
+
+/* Media query for screens up to 376px (Iphone SE) */
+@media only screen and (max-width: 376px) {
+    /* Reduce font size for smaller screens */
+    * {
+        font-size: small;
+    }
+
+    /* Styles for navigation elements */
+    #navLinks {
+        flex: 6; /* 6/8 width */
+    }
+
+    /* Styles for elements within "logoSection" */
+    #logoSection a {
+        margin: 10px; /* Margin */
+        display: inline-block; /* Display as inline-block */
+    }
+
+    #logoSection a img {
+        width: 32.5px; /* Set image width */
+        border-radius: 30%; /* Rounded corners */
+    }
+
+    /* Styles for elements within "navLinks" */
+    #navLinks a {
+        margin-top: 20px; /* Margin at the top */
+        margin-right: 32px; /* Margin at the right */
+        display: inline-block; /* Display as inline-block */
+    }
+
+    /* Styles for form section */
+    #formSection {
+        margin: auto; /* Center horizontally */
+        padding: 10px; /* Padding */
+        width: 50%; /* Width */
+        text-align: left; /* Left-align text */
+        border: 1px solid beige; /* Border */
+        background-color: rgb(3, 3, 27); /* Dark background color */
+    }
+
+    /* Styles for tabs */
+    #tabs {
+        margin-top: 20px; /* Margin from the top */
+        display: block; /* Display as block */
+        background-color: greenyellow; /* Background color */
+    }
+}

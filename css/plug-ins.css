@@ -1,0 +1,143 @@
+/* 
+   Resetting defaults and setting up basic styles 
+*/
+* {
+    margin: 0px; /* Reset margin */
+    padding: 0px; /* Reset padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #add8e6; /* Set background color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Set font family */
+}
+
+/* 
+   Styles for the first paragraph within the header 
+*/
+#para1 {
+    margin: 10px; /* Set margin */
+    text-align: center; /* Center-align text */
+}
+
+/* 
+   Styles for the navigation bar 
+*/
+#navBar {
+    display: flex; /* Use flexbox layout */
+    margin-top: 10px; /* Set top margin */
+}
+
+/* 
+   Styles for the logo section 
+*/
+#logoSection {
+    flex: 2; /* Occupy 2/5 of available space */
+}
+
+/* 
+   Styles for the navigation links section 
+*/
+#navLinks {
+    flex: 3; /* Occupy 3/5 of available space */
+}
+
+/* 
+   Styles for links within the logo section 
+*/
+#logoSection a {
+    text-decoration: none; /* Remove underlines from links */
+    margin: 10px; /* Set margin */
+    display: block; /* Display as block elements */
+}
+
+/* 
+   Styles for images within links in the logo section 
+*/
+#logoSection a img {
+    width: 65px; /* Set image width */
+    border-radius: 30%; /* Apply border radius */
+}
+
+/* 
+   Styles for links within the navigation links section 
+*/
+#navLinks a {
+    text-decoration: none; /* Remove underlines from links */
+    margin-top: 40px; /* Set top margin */
+    margin-right: 200px; /* Set right margin */
+    display: inline-block; /* Display as inline-block elements */
+}
+
+/* 
+   Media query for screens up to 768px wide (e.g., iPad Mini) 
+*/
+@media only screen and (max-width: 768px) {
+    #navBar {
+        display: flex; /* Use flexbox layout */
+        margin-top: 10px; /* Set top margin */
+    }
+    
+    #logoSection {
+        flex: 2; /* Occupy 2/5 of available space */
+    }
+    
+    #navLinks {
+        flex: 3; /* Occupy 3/5 of available space */
+    }
+    
+    #logoSection a {
+        text-decoration: none; /* Remove underlines from links */
+        margin: 10px; /* Set margin */
+        display: block; /* Display as block elements */
+    }
+    
+    #logoSection a img {
+        width: 65px; /* Set image width */
+        border-radius: 30%; /* Apply border radius */
+    }
+    
+    #navLinks a {
+        text-decoration: none; /* Remove underlines from links */
+        margin-top: 40px; /* Set top margin */
+        margin-right: 80px; /* Set right margin */
+        display: inline-block; /* Display as inline-block elements */
+    }
+}
+
+/* 
+   Media query for screens up to 376px wide (e.g., iPhone SE) 
+*/
+@media only screen and (max-width: 376px) {
+    * {
+        font-size: small; /* Decrease font size */
+    }
+    
+    #navBar {
+        display: flex; /* Use flexbox layout */
+        margin-top: 10px; /* Set top margin */
+    }
+    
+    #logoSection {
+        flex: 2; /* Occupy 2/8 of available space */
+    }
+    
+    #navLinks {
+        flex: 6; /* Occupy 6/8 of available space */
+    }
+    
+    #logoSection a {
+        text-decoration: none; /* Remove underlines from links */
+        margin: 10px; /* Set margin */
+        display: inline-block; /* Display as inline-block elements */
+    }
+    
+    #logoSection a img {
+        width: 32.5px; /* Set image width */
+        border-radius: 30%; /* Apply border radius */
+    }
+    
+    #navLinks a {
+        text-decoration: none; /* Remove underlines from links */
+        margin-top: 20px; /* Set top margin */
+        margin-right: 32px; /* Set right margin */
+        display: inline-block; /* Display as inline-block elements */
+    }
+}

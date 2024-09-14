@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mjmart</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/register.css"> <!-- Assuming this is a custom CSS file for registration page styling -->
+    <!-- External JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="../js/register.js" defer></script> <!-- Assuming this is a custom JavaScript file for registration page functionality -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav id="navBar">
+            <!-- Logo -->
+            <div id="logoSection">
+                <a href="../index.html"><img src="../img/logo.jpeg" alt="websiteLogo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <div id="navLinks">
+                <a href="../html/register.html"> Products</a> <!-- Assuming this link is incorrect and should be replaced with the correct one -->
+                <a href="../html/widgets.html"> Widgets</a>
+                <a href="../html/plug-ins.html"> Plug-ins</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Registration Form -->
+        <h2>User Registration</h2>
+        <div id="formSection">
+            <!-- Error Message Display -->
+            <p id="errormessage"></p>
+            <br />
+            <!-- Registration Form -->
+            <form id="form" action="../php/jQFormsAddUser.php" method="post">
+                <!-- First Name Input -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" minlength="3" required />
+                <!-- Last Name Input -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" />
+                <!-- User Name Input -->
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName" minlength="3" />
+                <!-- Email Input -->
+                <label for="email">User Email:</label>
+                <input type="email" id="email" name="email" />
+                <!-- Password Input -->
+                <label for="password">Password:&nbsp;&nbsp;</label>
+                <input type="password" id="password" name="password" />
+                <!-- Confirm Password Input -->
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" />
+                <!-- Date of Birth Input -->
+                <label for="datepicker">Date of Birth:</label>
+                <input type="text" id="datepicker" placeholder="mm/dd/yyyy" name="dob" pattern="^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$" required />
+                <!-- Occupation Input -->
+                <label for="occupation">Occupation: &nbsp;</label>
+                <input type="text" id="occupation" name="occupation" />
+                <!-- Gender Selection -->
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br />
+                <!-- Submit Button -->
+                <button id="button1" type="submit">Sign up</button>
+                <br />
+                <!-- Error Message Display (Hidden by Default) -->
+                <div id="errormessage" style="display: none;"></div>
+            </form>
+            <div id="loginSection">
+                <!-- Login Redirect Option -->
+                <p>Already Have an Account?</p>
+                <button id="button2" onclick="redirectToAnotherPage()">Log in</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

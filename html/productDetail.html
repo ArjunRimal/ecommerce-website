@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mjmart</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/productDetail.css"> <!-- Assuming this is a custom CSS file for product detail styling -->
+    <!-- External JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="../js/productDetail.js" defer></script> <!-- Assuming this is a custom JavaScript file for product detail functionality -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <nav id="navBar">
+            <!-- Logo -->
+            <div id="logoSection">
+                <a href="../index.html"><img src="../img/logo.jpeg" alt="websiteLogo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <div id="navLinks"> 
+                <!-- Cart Icon with Count -->
+                <a href="#"><sub>Cart <sup><span id="cartCount">0</span></sup></sub></a>             
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Message Section (e.g., for displaying alerts) -->
+        <p  style="text-align:center; color:red;" id="message"></p>
+        <!-- Product Detail Section -->
+        <div id="productDetail">
+            <!-- Product Image -->
+            <img src="" alt="">
+            <!-- Price -->
+            <p>Price: <span id="price"></span></p>
+            <!-- Quantity -->
+            <p>Quantity: <span id="quantity"></span></p>
+            <!-- Description -->
+            <p>Description:</p>
+            <p id="description"></p>
+            <!-- Add to Cart Button -->
+            <button id="addToCart">Add To Cart</button>
+            <!-- Remove Button (Assuming this removes the product from cart) -->
+            <button id="remove">Remove</button>
+        </div>        
+    </main>   
+</body>
+</html>
